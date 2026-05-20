@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Nature Hair Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .booking-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 20px;
+        }
+        .form-box {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 15px 0 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .btn-primary {
+            width: 100%;
+            margin-top: 25px;
+        }
+        @media (max-width: 768px) {
+            .booking-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Nature Hair Salon">
+                <h1>Nature Hair Salon</h1>
+            </div>
+            <nav>
+                <a href="index(home).html">Home</a>
+                <a href="About.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="Special Packages.html">Packages</a>
+                <a href="booking.html">Book Now</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="height: 45vh;">
+            <div class="hero-content">
+                <h2>Book Your Appointment</h2>
+            </div>
+        </section>
+
+        <div class="booking-container">
+            <div class="form-box">
+                <h2>Reserve Your Spot</h2>
+                <form>
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="+267 XX XXX XXX" required>
+
+                    <label>Email (Optional)</label>
+                    <input type="email" placeholder="your@email.com">
+
+                    <label>Select Service</label>
+                    <select required>
+                        <option value="">Choose Service</option>
+                        <option>Men's Haircut</option>
+                        <option>Ladies Haircut</option>
+                        <option>Box Braids</option>
+                        <option>Knotless Braids</option>
+                        <option>Weave / Wig Install</option>
+                        <option>Hair Treatment</option>
+                        <option>Glam Package</option>
+                    </select>
+
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+
+                    <label>Preferred Time</label>
+                    <input type="time" required>
+
+                    <label>Special Requests</label>
+                    <textarea rows="4" placeholder="Any special requests..."></textarea>
+
+                    <button type="submit" class="btn-primary">Confirm Booking</button>
+                </form>
+            </div>
+
+            <div style="background:white; padding:40px; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3>Get In Touch</h3>
+                <p><strong>📍 Location:</strong><br> Gaborone, Botswana</p>
+                <p><strong>📞 Phone:</strong><br> +267 123 4567</p>
+                <p><strong>🕒 Hours:</strong><br> Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 8:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nature Hair Salon • Gaborone, Botswana</p>
+        <p>+267 123 4567 | tumisangchengela@gmail.com</p>
+    </footer>
+</body>
+</html>

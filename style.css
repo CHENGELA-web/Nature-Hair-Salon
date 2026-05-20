@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fffaf5;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #741c1c, #f87070);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* HERO */
+.hero {
+    height: 65vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/lady2.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #ffd700;
+    color: #741c1c;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.gallery-item, figure {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s;
+}
+
+.gallery-item:hover, figure:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.gallery-item img, figure img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #741c1c;
+}
+
+/* FOOTER */
+footer {
+    background: #741c1c;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav a { margin: 8px 12px; }
+}

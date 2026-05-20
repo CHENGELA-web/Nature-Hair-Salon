@@ -1,0 +1,273 @@
+/* =========================
+   GLOBAL STYLING
+========================= */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+background-color: #f8f8f8;
+color: #333;
+line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+background: linear-gradient(to right, #741c1c, #f87070);
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+header h1 {
+font-size: 28px;
+letter-spacing: 1px;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+background-color: #f87070;
+padding: 15px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #f4b400;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main, section {
+padding: 30px;
+max-width: 1200px;
+margin: auto;
+}
+
+h2, h3, h4 {
+margin-bottom: 10px;
+color: #222;
+}
+
+/* =========================
+   GALLERY GRID
+========================= */
+
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 20px;
+}
+
+figure {
+background: white;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+text-align: center;
+transition: 0.3s;
+}
+
+figure:hover {
+transform: translateY(-5px);
+}
+
+figure img {
+border-radius: 10px;
+}
+
+figcaption {
+margin-top: 10px;
+font-weight: bold;
+}
+
+/* =========================
+   SERVICES PAGE
+========================= */
+
+section figure {
+margin-bottom: 20px;
+}
+
+/* =========================
+   BOOKING FORM
+========================= */
+
+.container {
+width: 90%;
+max-width: 600px;
+margin: 40px auto;
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+label {
+display: block;
+margin-top: 15px;
+font-weight: bold;
+}
+
+input, select, textarea {
+width: 100%;
+padding: 12px;
+margin-top: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 14px;
+}
+
+textarea {
+resize: none;
+height: 80px;
+}
+
+button {
+margin-top: 20px;
+width: 100%;
+padding: 12px;
+background-color: #000;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background-color: #f4b400;
+color: black;
+}
+
+/* =========================
+   LIST STYLE
+========================= */
+
+ul {
+margin-left: 20px;
+margin-top: 10px;
+}
+
+ul li {
+margin-bottom: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+background-color: #dd5656;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 30px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+header h1 {
+font-size: 22px;
+}
+
+nav a {
+display: block;
+margin: 10px 0;
+}
+
+main, section {
+padding: 15px;
+}
+
+.gallery-container {
+grid-template-columns: 1fr;
+}
+
+}
+/* Video Section */
+.craftsmanship-video-section {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+}
+
+.craftsmanship-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.video-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.video-overlay-text h2 {
+  font-size: 2.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.video-overlay-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-top: 0.6rem;
+}
+
+/* Content Section */
+.craftsmanship-content {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.craftsmanship-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+}
+
+.craftsmanship-content h3 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  color: #ddd;
+}
+
+.craftsmanship-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #bbb;
+}
